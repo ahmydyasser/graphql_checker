@@ -36,6 +36,7 @@ while read -r host; do
   last_output="./sub/${host}_${TODAY}.txt"
   subfinder -d "$host" -silent -o "$last_output"
 
+  echo "$host" >> "$output_file"
   cat "$last_output" >> "$output_file"
 done < "$urls"
 
