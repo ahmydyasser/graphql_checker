@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Colors
 GREEN="\033[1;32m"
